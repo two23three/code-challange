@@ -9,6 +9,9 @@ the file code challange contains 5 files two of which are HTML files that show t
 the salary.js does not have a HTML file as the functionality is displayed within the code
 the code is well comented and should bring no issues in understanding
 
+**VERY IMPORTANT POINT**
+please open the html files individualy in the browser
+
 ## Installation
 You use git clone to be able to download the documents in the GitHub
 
