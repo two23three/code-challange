@@ -1,4 +1,4 @@
-# (code challage)
+# (code challenge)
 
 #### Date, 2024/4/23
 
