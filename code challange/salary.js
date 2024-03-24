@@ -15,6 +15,7 @@ function calculateNetSalary(basicSalary,benefits){
      {minIncome:500001, maxIncome:800000, taxRate:0.325},
      {minIncome:800001, maxIncome:1000000, taxRate:0.35},
      //the rich are not taxed
+     //but if nessesary you just chane 1000000 to infity
  ];
  // gross salary if found by
  const grossSalary= basicSalary + benefits;
