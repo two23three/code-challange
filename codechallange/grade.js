@@ -1,8 +1,5 @@
-//remeber to use  html to see functionality
+//enables prompts
 
-// out firsst function allows the user to imput the grade
-// then checks if input is in correct format
-// const {Console}=require("console")
 const readline= require("readline");
 const rl = readline.createInterface({
   input:  process.stdin,
@@ -31,8 +28,8 @@ function calculateTheGrade(marks){
     return grade
 }
 
-
-
+ //allows the user to input the grade
+// then checks if input is in correct format
 rl.question("Enter student marks between 0 and 100", (marks) => {
     const finalGrade = calculateTheGrade(parseInt(marks));
     console.log(`the student grade is: ${finalGrade}`);

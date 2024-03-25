@@ -1,4 +1,4 @@
-//remeber to use the html file to see the functionality
+
 // this is what enables the user input speed
 const readline= require("readline");
 const rl = readline.createInterface({
@@ -7,6 +7,7 @@ const rl = readline.createInterface({
 })
 
 const inputSpeed =()=>{
+    // this is what enables the user input speed
  rl.question("SPEED IN KM/HR",(speedInput)=>{
     //checks if input given is in correct format
     const speed = parseInt(speedInput);
