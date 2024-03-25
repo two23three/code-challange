@@ -5,12 +5,10 @@
 #### By *Tulley Mwenda Mutea*
 
 ## Description
-the file code challange contains 5 files two of which are HTML files that show the functionality of the code if you want the raw code you can click on the javascript files
-the salary.js does not have a HTML file as the functionality is displayed within the code
-the code is well comented and should bring no issues in understanding
+three files containing the various challenges index.js(contains speed governor) salary.js and grade.js
+the code is well-commented and provides enough context 
+you can run the code using node filename.js
 
-**VERY IMPORTANT POINT**
-please open the html files individualy in the browser
 
 ## Installation
 You use git clone to be able to download the documents in the GitHub
