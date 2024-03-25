@@ -32,20 +32,48 @@ function calculateNetSalary(basicSalary,benefits){
         grossSalary - bracket.minIncome,bracket.maxIncome -bracket.minIncome)
         //multiplies taxable income by tax rate specified 
          tax += taxableIncome * bracket.taxRate;
-    
+         console.log(tax);
     }
     else {
         break
     }
+   
  }
+   
  ///constants that neverchange
- const nhifRate= 0.025;
+ const nhifDeduction=[
+    {minIncome: 0,  maxIncome:5999,nhifDeduction:150},
+    {minIncome:6000, maxIncome:7999,nhifDeduction:400},
+    {minIncome:8000 ,maxIncome:11999, nhifDeduction:500},
+    {minIncome:12000, maxIncome:14999, nhifDeduction:600},
+    {minIncome:15000, maxIncome:19999,nhifDeduction:750},
+    {minIncome: 20000,  maxIncome:24999,nhifDeduction:850},
+    {minIncome:30000, maxIncome:34999,nhifDeduction:900},
+   {minIncome:35000, maxIncome:39999, nhifDeduction:950},
+    {minIncome:40000, maxIncome:44999, nhifDeduction:1000},
+    {minIncome:45000, maxIncome:49999,nhifDeduction:1100},
+    {minIncome: 50000 , maxIncome:59999,nhifDeduction:1200},
+    {minIncome:60000, maxIncome:69999,nhifDeduction:1300},
+    {minIncome:70000, maxIncome :79999 ,nhifDeduction:1400},
+    {minIncome:80000, maxIncome:89999, nhifDeduction:1500},
+    {minIncome:90000, maxIncome:99999, nhifDeduction:1600},
+    {minIncome:100000, maxIncome:1000000, nhifDeduction:1700}, 
+ ]
+
+
+ let nhifDeductionAmount = 0;
+for (const bracket of nhifDeduction) {
+    if (grossSalary >= bracket.minIncome && grossSalary <= bracket.maxIncome) {
+        nhifDeductionAmount = bracket.nhifDeduction;
+        break;
+    }
+}
  const nssfRate= 0.06;
- const nhifDeduction = grossSalary * nhifRate;
+ 
  const nssfDeduction = grossSalary * nssfRate;
 
  ///finally net salary
- const netSalary = grossSalary - tax - nhifDeduction - nssfDeduction ;
+ const netSalary = (grossSalary - tax - nhifDeductionAmount - nssfDeduction).toFixed(2) ;
  return netSalary;
 };
  rl.question("Enter basic salary:",(basicSalary)=>{
@@ -59,6 +87,9 @@ function calculateNetSalary(basicSalary,benefits){
 
 
 // asign netsalary to be the function calculateNetSalary
-
-
+//gross 70000
+//nhif 1400
+//nssf 4200
+//tax 4399.68
+//net salary 60000.32
 
