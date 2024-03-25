@@ -68,6 +68,7 @@ for (const bracket of nhifDeduction) {
         break;
     }
 }
+//nssf is 6% deducted by the employer and the employee pays 6%
  const nssfRate= 0.06;
  
  const nssfDeduction = grossSalary * nssfRate;
