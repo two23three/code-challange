@@ -40,7 +40,7 @@ function calculateNetSalary(basicSalary,benefits){
    
  }
    
- ///constants that neverchange
+ ///nhif array
  const nhifDeduction=[
     {minIncome: 0,  maxIncome:5999,nhifDeduction:150},
     {minIncome:6000, maxIncome:7999,nhifDeduction:400},
