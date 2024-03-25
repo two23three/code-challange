@@ -32,4 +32,5 @@ Javascript
 github.com/two23three
 
 ### License
-The content of this site is licensed under tulley
+The content of this site is licensed under Tulley
+copyright (c) 2024
