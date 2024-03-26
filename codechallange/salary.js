@@ -9,7 +9,7 @@ const rl = readline.createInterface({
 
 function calculateNetSalary(basicSalary,benefits){
     
-
+ //after heavy reaserch
  //now we initalise the tax brackets in an array
  const taxBrackets =[
     //we have our first bracket here we have three properties minincome maxincome and the tax rate
@@ -41,7 +41,7 @@ function calculateNetSalary(basicSalary,benefits){
     }
    
  }
-   
+   // the array method is esier to use
  ///nhif array
  const nhifDeduction=[
     {minIncome: 0,  maxIncome:5999,nhifDeduction:150},
