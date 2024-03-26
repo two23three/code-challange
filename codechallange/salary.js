@@ -13,6 +13,7 @@ function calculateNetSalary(basicSalary,benefits){
  //now we initalise the tax brackets in an array
  const taxBrackets =[
     //we have our first bracket here we have three properties minincome maxincome and the tax rate
+    //it goes through every bracket its an itteration
      {minIncome: 0,  maxIncome:24000,taxRate: 0.1},
      {minIncome:24001, maxIncome:32333, taxRate:0.24},
      {minIncome:32334, maxIncome:500000, taxRate :0.3 },
@@ -49,7 +50,7 @@ function calculateNetSalary(basicSalary,benefits){
     {minIncome:15000, maxIncome:19999,nhifDeduction:750},
     {minIncome: 20000,  maxIncome:24999,nhifDeduction:850},
     {minIncome:30000, maxIncome:34999,nhifDeduction:900},
-   {minIncome:35000, maxIncome:39999, nhifDeduction:950},
+    {minIncome:35000, maxIncome:39999, nhifDeduction:950},
     {minIncome:40000, maxIncome:44999, nhifDeduction:1000},
     {minIncome:45000, maxIncome:49999,nhifDeduction:1100},
     {minIncome: 50000 , maxIncome:59999,nhifDeduction:1200},
