@@ -14,6 +14,7 @@ function calculateNetSalary(basicSalary,benefits){
  const taxBrackets =[
     //we have our first bracket here we have three properties minincome maxincome and the tax rate
     //it goes through every bracket its an itteration
+    // looks if the gross salary is more than max amount in 
      {minIncome: 0,  maxIncome:24000,taxRate: 0.1},
      {minIncome:24001, maxIncome:32333, taxRate:0.24},
      {minIncome:32334, maxIncome:500000, taxRate :0.3 },
@@ -61,6 +62,7 @@ function calculateNetSalary(basicSalary,benefits){
     {minIncome:90000, maxIncome:99999, nhifDeduction:1600},
     {minIncome:100000, maxIncome:1000000, nhifDeduction:1700}, 
  ]
+ //looks if the gross salary is less then the mimum amount of the bracket then gives the nhif deduction ammount
 
 
  let nhifDeductionAmount = 0;
