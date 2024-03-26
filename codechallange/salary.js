@@ -25,6 +25,7 @@ function calculateNetSalary(basicSalary,benefits){
  const grossSalary= basicSalary + benefits;
  //tax calculation
  let tax =0;
+ ///for of
  for (const bracket of taxBrackets){
     if (grossSalary > bracket.maxIncome){
     const taxableIncome = 
